@@ -1,212 +1,68 @@
 {
+    "chart": {
+        "type": "bar"
+    },
     "title": {
-        "text": "The percentage of CLOs outside their ‘reinvestment periods’ is soaring, pushing up demand for short-dated parts of the CLO and loan market",
+        "text": "Q1: Which type of climate-related targets or limits does your fund have in place?",
         "align": "left"
     },
     "subtitle": {
-        "text": "Source: Ninety One, Bloomberg. *projected based on reinvestment schedule of current deals.",
-        "align": "left"
+        "text": "Source: Wikipedia.org"
     },
     "xAxis": {
-        "accessibility": {
-            "rangeDescription": "Range: March 2018 to June 2023 and projection until November 2023"
-        },
         "categories": [
-            "Mar-18",
-            "Jun-18",
-            "Sep-18",
-            "Dec-18",
-            "Mar-19",
-            "Jun-19",
-            "Sep-19",
-            "Dec-19",
-            "Mar-20",
-            "Jun-20",
-            "Sep-20",
-            "Dec-20",
-            "Mar-21",
-            "Jun-21",
-            "Sep-21",
-            "Dec-21",
-            "Mar-22",
-            "Jun-22",
-            "Sep-22",
-            "Dec-22",
-            "Mar-23",
-            "Jun-23",
-            "Sep-23",
-            "Dec-23"
+            "Emission reduction",
+            "Climate risk (e.g. VaR; % assets at risk)",
+            "Implied temperature rise",
+            "Portfolio coverage/asset-level alignment (e.g. coverage of science-based targets)",
+            "We have no climate-related targets in place"
         ],
-        "lineWidth": 1,
-        "lineColor": "#b2a896",
-        "crosshair": false,
-        "visible": true,
-        "labels": {
-            "rotation": 270
-        }
-    },
-    "legend": {
-        "layout": "vertical",
-        "align": "right",
-        "verticalAlign": "middle",
-        "itemStyle": {
-            "fontWeight": "lighter",
-            "lineHeight": "10"
-        }
-    },
-    "plotOptions": {
-        "series": {
-            "marker": {
-                "enabled": false
-            },
-            "lineWidth": 2
-        }
+        "title": {
+            "text": null
+        },
+        "lineWidth": 0,
+        "valueSuffix": "%"
     },
     "yAxis": {
+        "min": 0,
         "title": {
-            "text": "Percentage"
+            "enabled": false
         },
         "labels": {
+            "overflow": "justify",
             "format": "{value}%"
         },
-        "gridLineWidth": 0,
-        "margin": 10
+        "gridLineWidth": 1
+    },
+    "tooltip": {
+        "enabled": false
+    },
+    "legend": {
+        "enabled": false
+    },
+    "plotOptions": {
+        "bar": {
+            "borderRadius": "0",
+            "dataLabels": {
+                "enabled": true,
+                "format": "{y}%"
+            },
+            "groupPadding": 0.1
+        }
+    },
+    "credits": {
+        "enabled": false
     },
     "series": [
         {
-            "name": "EUR",
+            "name": "Percentages",
             "data": [
-                1.69522097605021,
-                0.833940729858446,
-                1.06242456097616,
-                2.28253704277657,
-                3.46284382878948,
-                3.22311171051859,
-                3.82802486578182,
-                4.33901845640032,
-                4.41536221831455,
-                4.16639405298053,
-                4.36907493072626,
-                3.93590908746023,
-                4.40973054772777,
-                6.67580481692727,
-                10.1283320336712,
-                10.204831601233,
-                14.3984420055627,
-                18.2399786823521,
-                22.4030052509074,
-                25.5529807092491,
-                26.4829868024199,
-                28.7755945008879
-            ]
-        },
-        {
-            "name": "USD",
-            "data": [
-                4.71994443394767,
-                4.59567207699089,
-                5.58082246072967,
-                5.71654757032606,
-                6.35133426864214,
-                6.52453636850014,
-                6.82078905905548,
-                6.89405280614001,
-                6.78937788600855,
-                8.46292075189244,
-                9.41431443308032,
-                9.99651848796891,
-                9.22423741183552,
-                9.15555464475107,
-                9.88304393656019,
-                10.2389025611176,
-                10.0691321034456,
-                10.6370541910591,
-                13.8250750567519,
-                16.6021931152615,
-                19.7417248200175,
-                25.4808431856264
-            ]
-        },
-        {
-            "name": "EUR projected*",
-            "dashStyle": "Dash",
-            "data": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                28.7755945008879,
-                30.6662489612838,
-                33.3113802435162
-            ]
-        },
-        {
-            "name": "USD projected*",
-            "dashStyle": "Dash",
-            "data": [
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null,
-                25.4808431856264,
-                31.9535142733775,
-                37.7674006612401
+                51,
+                44,
+                42,
+                39,
+                1
             ]
         }
-    ],
-    "tooltip": {
-        "pointFormat": "<span style=\"color:{series.color}\"><b>{series.name}: {point.y}%</b></span><br />",
-        "valueDecimals": 2,
-        "split": false
-    },
-    "responsive": {
-        "rules": [
-            {
-                "condition": {
-                    "maxWidth": 700
-                },
-                "chartOptions": {
-                    "legend": {
-                        "layout": "horizontal",
-                        "align": "center",
-                        "verticalAlign": "bottom"
-                    }
-                }
-            }
-        ]
-    }
+    ]
 }
